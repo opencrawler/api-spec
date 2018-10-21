@@ -44,6 +44,8 @@ The open-crawler api-spec encourages participation from individuals and companie
 * Check the [issues](https://github.com/opencrawler/api-spec/issues) and [pull requests](https://github.com/opencrawler/api-spec/pulls) to see if someone has already documented your idea or feedback on the specification. You can follow an existing conversation by adding a comment to the existing issue or PR.
 * Create an issue to describe a new concern. If possible, propose a solution.
 
+More detail you can check the [CONTRIBUTING](.github/CONTRIBUTING.md)
+
 Not all feedback can be accommodated and there may be solid arguments for or against a change being appropriate for the specification.
 
 ## Licensing
