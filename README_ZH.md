@@ -29,7 +29,7 @@ open-crawler api-spec规范的目的就是使得每一个站点或者http服务�
 
 目前我们支持在一下社群中进行讨论:
 - [Gitter](https://gitter.im/Open-Crawler/Lobby)
-- 微信 ![Open Crawler Group](assets/wechat-open-crawler-group.png)
+- 添加微信，发送`open-crawler`，拉入群聊 ![Open Crawler Group](https://github.com/jiusanzhou/jiusanzhou.github.io/raw/master/static/WeChat-JohnCx.jpeg)
 
 ## 参与
 

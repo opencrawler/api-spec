@@ -29,7 +29,7 @@ The open-crawler api-spec is trying to make every sites served as API service. T
 
 For now we only supported:
 - [Gitter](https://gitter.im/Open-Crawler/Lobby)
-- WeChat ![Open Crawler Group](assets/wechat-open-crawler-group.png)
+- Add WeChat, send with `open-crawler` ![Open Crawler Group](https://github.com/jiusanzhou/jiusanzhou.github.io/raw/master/static/WeChat-JohnCx.jpeg)
 
 ## Participation
 
