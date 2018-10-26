@@ -3,6 +3,7 @@
 **The specification is under discussing, for new the specification is draft. If you want to use it in your business, you need to understand everything of this specification could be changed. Last updated at 21/10/2018**
 
 [![Build Status](https://travis-ci.org/opencrawler/api-spec.svg?branch=master)](https://travis-ci.org/opencrawler/api-spec)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fopencrawler%2Fapi-spec.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fopencrawler%2Fapi-spec?ref=badge_shield)
 
 ![](https://avatars0.githubusercontent.com/u/44334826?s=200&v=4)
 
@@ -51,3 +52,5 @@ Not all feedback can be accommodated and there may be solid arguments for or aga
 ## Licensing
 
 See: [License (Apache-2.0)](https://github.com/opencrawl/api-spec/blob/master/LICENSE)
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fopencrawler%2Fapi-spec.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fopencrawler%2Fapi-spec?ref=badge_large)
