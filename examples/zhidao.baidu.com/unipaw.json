@@ -1,27 +1,27 @@
 {
     "id" : "zhidao.baidu.com",
-    "create" : NumberLong(1530870199),
-    "update" : NumberLong(0),
+    "create" : 1530870199,
+    "update" : 0,
     "meta" : {},
     "data" : {
         "tags" : [],
         "meta" : {
             "client" : {
-                "network" : "»ª¶«-µçĞÅ|*-ÁªÍ¨",
+                "network" : "åä¸œ-ç”µä¿¡|*-è”é€š",
                 "proxy" : "",
                 "user_agent" : "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36",
                 "os" : [],
                 "browser" : []
             },
             "retry" : 3,
-            "timeout" : NumberLong(30000)
+            "timeout" : 30000
         },
         "pawid" : "zhidao.baidu.com",
         "externaldocs" : null,
         "openapi" : "3.0.1",
         "info" : {
-            "title" : "°Ù¶ÈÖªµÀ",
-            "description" : "°Ù¶ÈÖªµÀ",
+            "title" : "ç™¾åº¦çŸ¥é“",
+            "description" : "ç™¾åº¦çŸ¥é“",
             "termsofservice" : "",
             "contact" : {
                 "name" : "Zoe",
@@ -301,7 +301,7 @@
                     "externaldocs" : null,
                     "parameters" : [],
                     "headers" : {},
-                    "description" : "ÎÊÌâÏêÇé-ÕâÀïÊÇ¸ö¼ÙµÄÆäÊµpathÖĞÓ¦¸ÃÓĞÎÊÌâid"
+                    "description" : "é—®é¢˜è¯¦æƒ…-è¿™é‡Œæ˜¯ä¸ªå‡çš„å…¶å®pathä¸­åº”è¯¥æœ‰é—®é¢˜id"
                 },
                 "post" : null,
                 "head" : null
@@ -326,7 +326,7 @@
                     "externaldocs" : null,
                     "parameters" : [ 
                         {
-                            "description" : "ËÑË÷´Ê",
+                            "description" : "æœç´¢è¯",
                             "explode" : false,
                             "allowreserved" : false,
                             "name" : "word",
@@ -356,7 +356,7 @@
                         }
                     ],
                     "headers" : {},
-                    "description" : "ËÑË÷ÎÊÌâ",
+                    "description" : "æœç´¢é—®é¢˜",
                     "server" : 0,
                     "requestbody" : null,
                     "operationid" : "",
@@ -455,7 +455,7 @@
                     "tags" : [],
                     "requestbody" : null,
                     "deprecated" : false,
-                    "description" : "ËÑË÷ÎÊÌâ",
+                    "description" : "æœç´¢é—®é¢˜",
                     "security" : [],
                     "headers" : {}
                 },
