@@ -1,0 +1,481 @@
+{
+    "id" : "zhidao.baidu.com",
+    "create" : NumberLong(1530870199),
+    "update" : NumberLong(0),
+    "meta" : {},
+    "data" : {
+        "tags" : [],
+        "meta" : {
+            "client" : {
+                "network" : "华东-电信|*-联通",
+                "proxy" : "",
+                "user_agent" : "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36",
+                "os" : [],
+                "browser" : []
+            },
+            "retry" : 3,
+            "timeout" : NumberLong(30000)
+        },
+        "pawid" : "zhidao.baidu.com",
+        "externaldocs" : null,
+        "openapi" : "3.0.1",
+        "info" : {
+            "title" : "百度知道",
+            "description" : "百度知道",
+            "termsofservice" : "",
+            "contact" : {
+                "name" : "Zoe",
+                "url" : "https://wellwell.work",
+                "email" : "jsz3@live.com"
+            },
+            "license" : null,
+            "version" : "0.0.1"
+        },
+        "servers" : [ 
+            {
+                "url" : "https://zhidao.baidu.com",
+                "description" : "",
+                "variables" : {}
+            }
+        ],
+        "paths" : {
+            "/question_html" : {
+                "description" : "",
+                "options" : null,
+                "patch" : null,
+                "parameters" : [],
+                "fingerid" : "/question.html",
+                "ref" : "",
+                "put" : null,
+                "delete" : null,
+                "trace" : null,
+                "server" : 0,
+                "path" : "/question.html",
+                "summary" : "",
+                "get" : {
+                    "server" : 0,
+                    "requestbody" : null,
+                    "operationid" : "",
+                    "responses" : {
+                        "200" : {
+                            "description" : "",
+                            "headers" : {},
+                            "content" : {
+                                "text/html" : {
+                                    "schema" : {
+                                        "anyof" : [],
+                                        "format" : "",
+                                        "type" : "object",
+                                        "items" : null,
+                                        "additionalproperties" : null,
+                                        "sel" : "",
+                                        "required" : false,
+                                        "oneof" : [],
+                                        "not" : null,
+                                        "properties" : {
+                                            "url" : {
+                                                "type" : "string",
+                                                "sel" : "$request.Url"
+                                            },
+                                            "ask-title" : {
+                                                "not" : null,
+                                                "format" : "",
+                                                "default" : "",
+                                                "oneof" : [],
+                                                "sel" : "//h1[@accuse='qTitle']/span",
+                                                "filter" : "",
+                                                "items" : null,
+                                                "properties" : {},
+                                                "required" : false,
+                                                "anyof" : [],
+                                                "allof" : [],
+                                                "additionalproperties" : null,
+                                                "description" : "",
+                                                "type" : "string"
+                                            },
+                                            "q-content" : {
+                                                "required" : false,
+                                                "anyof" : [],
+                                                "properties" : {},
+                                                "additionalproperties" : null,
+                                                "description" : "",
+                                                "type" : "string",
+                                                "allof" : [],
+                                                "format" : "",
+                                                "default" : "",
+                                                "oneof" : [],
+                                                "not" : null,
+                                                "filter" : "",
+                                                "items" : null,
+                                                "sel" : "//div[@accuse='qContent']/span"
+                                            },
+                                            "other-answers" : {
+                                                "type" : "object",
+                                                "properties" : {
+                                                    "other-answer" : {
+                                                        "type" : "array",
+                                                        "sel" : "//div[@id='wgt-answers']//div[contains(@class, 'bd answer')]",
+                                                        "items" : {
+                                                            "type" : "object",
+                                                            "properties" : {
+                                                                "answer" : {
+                                                                    "type" : "string",
+                                                                    "sel" : ".//div[contains(@id, 'answer-content')]//span"
+                                                                },
+                                                                "good" : {
+                                                                    "type" : "string",
+                                                                    "sel" : ".//span[contains(@id, 'evaluate')]/@data-evaluate"
+                                                                },
+                                                                "bad" : {
+                                                                    "type" : "string",
+                                                                    "sel" : ".//span[contains(@id, 'evaluate-bad')]/@data-evaluate"
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "best-answer" : {
+                                                "properties" : {
+                                                    "answer" : {
+                                                        "items" : null,
+                                                        "additionalproperties" : null,
+                                                        "sel" : "//div[contains(@class, 'wgt-best')]//div[@class='line content']/*[contains(@id, 'best-content')]",
+                                                        "type" : "string",
+                                                        "not" : null,
+                                                        "properties" : {},
+                                                        "default" : "",
+                                                        "required" : false,
+                                                        "oneof" : [],
+                                                        "description" : "",
+                                                        "filter" : "",
+                                                        "allof" : [],
+                                                        "format" : "",
+                                                        "anyof" : []
+                                                    },
+                                                    "good" : {
+                                                        "sel" : "//div[contains(@class, 'wgt-best')]//div[@class='line content']//div[@class='qb-zan-eva']/span[@alog-action='qb-zan-btnbestbox']/@data-evaluate",
+                                                        "type" : "string",
+                                                        "items" : null,
+                                                        "additionalproperties" : null,
+                                                        "default" : "",
+                                                        "required" : false,
+                                                        "oneof" : [],
+                                                        "not" : null,
+                                                        "properties" : {},
+                                                        "allof" : [],
+                                                        "description" : "",
+                                                        "filter" : "",
+                                                        "anyof" : [],
+                                                        "format" : ""
+                                                    },
+                                                    "bad" : {
+                                                        "type" : "string",
+                                                        "items" : null,
+                                                        "additionalproperties" : null,
+                                                        "sel" : "//div[contains(@class, 'wgt-best')]//div[@class='line content']//div[@class='qb-zan-eva']/span[@alog-action='qb-evaluate-outer']/@data-evaluate",
+                                                        "oneof" : [],
+                                                        "not" : null,
+                                                        "properties" : {},
+                                                        "default" : "",
+                                                        "required" : false,
+                                                        "allof" : [],
+                                                        "description" : "",
+                                                        "filter" : "",
+                                                        "anyof" : [],
+                                                        "format" : ""
+                                                    }
+                                                },
+                                                "type" : "object",
+                                                "allof" : [],
+                                                "oneof" : [],
+                                                "anyof" : [],
+                                                "not" : null,
+                                                "items" : null
+                                            },
+                                            "relative" : {
+                                                "allof" : [],
+                                                "description" : "",
+                                                "filter" : "",
+                                                "anyof" : [],
+                                                "format" : "",
+                                                "type" : "array",
+                                                "items" : {
+                                                    "type" : "object",
+                                                    "items" : null,
+                                                    "additionalproperties" : null,
+                                                    "sel" : "",
+                                                    "oneof" : [],
+                                                    "not" : null,
+                                                    "properties" : {
+                                                        "title" : {
+                                                            "type" : "string",
+                                                            "items" : null,
+                                                            "additionalproperties" : null,
+                                                            "sel" : "./a/span",
+                                                            "oneof" : [],
+                                                            "not" : null,
+                                                            "properties" : {},
+                                                            "default" : "",
+                                                            "required" : false,
+                                                            "allof" : [],
+                                                            "description" : "",
+                                                            "filter" : "",
+                                                            "anyof" : [],
+                                                            "format" : ""
+                                                        },
+                                                        "url" : {
+                                                            "allof" : [],
+                                                            "description" : "",
+                                                            "filter" : "",
+                                                            "anyof" : [],
+                                                            "format" : "",
+                                                            "type" : "string",
+                                                            "items" : null,
+                                                            "additionalproperties" : null,
+                                                            "sel" : "./a/@href",
+                                                            "oneof" : [],
+                                                            "not" : null,
+                                                            "properties" : {},
+                                                            "default" : "",
+                                                            "required" : false
+                                                        },
+                                                        "good" : {
+                                                            "items" : null,
+                                                            "sel" : "./a/em/span",
+                                                            "filter" : "",
+                                                            "anyof" : [],
+                                                            "properties" : {},
+                                                            "required" : false,
+                                                            "description" : "",
+                                                            "type" : "string",
+                                                            "allof" : [],
+                                                            "additionalproperties" : null,
+                                                            "default" : "",
+                                                            "oneof" : [],
+                                                            "not" : null,
+                                                            "format" : ""
+                                                        }
+                                                    },
+                                                    "default" : "",
+                                                    "required" : false,
+                                                    "allof" : [],
+                                                    "description" : "",
+                                                    "filter" : "",
+                                                    "anyof" : [],
+                                                    "format" : ""
+                                                },
+                                                "additionalproperties" : null,
+                                                "sel" : "//ul[@alog-group='qb-relative-que']/li",
+                                                "required" : false,
+                                                "oneof" : [],
+                                                "not" : null,
+                                                "properties" : {},
+                                                "default" : ""
+                                            },
+                                            "question_id" : {
+                                                "type" : "string",
+                                                "sel" : "$request  get .Url `([0-9]+).htm` 1"
+                                            }
+                                        },
+                                        "default" : "",
+                                        "allof" : [],
+                                        "description" : "",
+                                        "filter" : ""
+                                    },
+                                    "examples" : {},
+                                    "encoding" : {},
+                                    "method" : "xpath"
+                                }
+                            },
+                            "links" : {}
+                        }
+                    },
+                    "callbacks" : {},
+                    "security" : [],
+                    "query" : {},
+                    "summary" : "",
+                    "deprecated" : false,
+                    "cookies" : {},
+                    "tags" : [],
+                    "externaldocs" : null,
+                    "parameters" : [],
+                    "headers" : {},
+                    "description" : "问题详情-这里是个假的其实path中应该有问题id"
+                },
+                "post" : null,
+                "head" : null
+            },
+            "/search" : {
+                "ref" : "",
+                "put" : null,
+                "trace" : null,
+                "patch" : null,
+                "description" : "",
+                "post" : null,
+                "options" : null,
+                "head" : null,
+                "delete" : null,
+                "server" : 0,
+                "path" : "/search",
+                "summary" : "",
+                "get" : {
+                    "deprecated" : false,
+                    "cookies" : {},
+                    "tags" : [],
+                    "externaldocs" : null,
+                    "parameters" : [ 
+                        {
+                            "description" : "搜索词",
+                            "explode" : false,
+                            "allowreserved" : false,
+                            "name" : "word",
+                            "in" : "query",
+                            "required" : true,
+                            "deprecated" : false,
+                            "allowemptyvalue" : true,
+                            "style" : "",
+                            "schema" : {
+                                "oneof" : [],
+                                "not" : null,
+                                "format" : "",
+                                "default" : "",
+                                "items" : null,
+                                "sel" : "",
+                                "filter" : "",
+                                "anyof" : [],
+                                "properties" : {},
+                                "required" : false,
+                                "type" : "string",
+                                "allof" : [],
+                                "additionalproperties" : null,
+                                "description" : ""
+                            },
+                            "examples" : {},
+                            "content" : {}
+                        }
+                    ],
+                    "headers" : {},
+                    "description" : "搜索问题",
+                    "server" : 0,
+                    "requestbody" : null,
+                    "operationid" : "",
+                    "responses" : {
+                        "200" : {
+                            "headers" : {},
+                            "content" : {
+                                "text/html" : {
+                                    "method" : "xpath",
+                                    "schema" : {
+                                        "type" : "object",
+                                        "properties" : {
+                                            "nextpage" : {
+                                                "sel" : "//div[@class='pager']/a[@class='pager-next']/@href",
+                                                "type" : "string"
+                                            },
+                                            "urls" : {
+                                                "items" : {
+                                                    "type" : "object",
+                                                    "properties" : {
+                                                        "url" : {
+                                                            "sel" : "./dt/a/@href",
+                                                            "type" : "string"
+                                                        }
+                                                    }
+                                                },
+                                                "type" : "array",
+                                                "sel" : "//*[@class='list']/dl"
+                                            }
+                                        }
+                                    },
+                                    "examples" : {},
+                                    "encoding" : {}
+                                }
+                            },
+                            "links" : {},
+                            "description" : ""
+                        }
+                    },
+                    "callbacks" : {},
+                    "security" : [],
+                    "query" : {},
+                    "summary" : ""
+                },
+                "parameters" : [],
+                "fingerid" : "/search"
+            },
+            "/search2" : {
+                "head" : null,
+                "summary" : "",
+                "get" : {
+                    "server" : 0,
+                    "cookies" : {},
+                    "callbacks" : {},
+                    "query" : {},
+                    "summary" : "",
+                    "externaldocs" : null,
+                    "operationid" : "",
+                    "parameters" : [],
+                    "responses" : {
+                        "200" : {
+                            "description" : "",
+                            "headers" : {},
+                            "content" : {
+                                "text/html" : {
+                                    "method" : "xpath",
+                                    "schema" : {
+                                        "properties" : {
+                                            "nextpage" : {
+                                                "type" : "string",
+                                                "sel" : "//div[@class='pager']/a[@class='pager-next']/@href"
+                                            },
+                                            "urls" : {
+                                                "type" : "array",
+                                                "sel" : "//*[@class='list']/dl",
+                                                "items" : {
+                                                    "type" : "object",
+                                                    "properties" : {
+                                                        "url" : {
+                                                            "type" : "string",
+                                                            "sel" : "./dt/a/@href"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "type" : "object"
+                                    },
+                                    "examples" : {},
+                                    "encoding" : {}
+                                }
+                            },
+                            "links" : {}
+                        }
+                    },
+                    "tags" : [],
+                    "requestbody" : null,
+                    "deprecated" : false,
+                    "description" : "搜索问题",
+                    "security" : [],
+                    "headers" : {}
+                },
+                "post" : null,
+                "parameters" : [],
+                "fingerid" : "/search2",
+                "description" : "",
+                "options" : null,
+                "patch" : null,
+                "trace" : null,
+                "server" : 0,
+                "path" : "/search",
+                "ref" : "",
+                "put" : null,
+                "delete" : null
+            }
+        },
+        "components" : null,
+        "security" : []
+    },
+    "state" : 0,
+    "ver" : 1
+}
