@@ -22,7 +22,7 @@ We create open-crawler api-spec by modified some section of Open API.
 
 We are always following the stable version of OAI. For now the version of OAI is `3.0.2`, and our open-crawler api-spec also is `3.0.2`. In the feature the stable of OAI will be `3.0.3`, at that time we will update our open-crawl-spec version to follow the newer version as soon as possible. At sometime, maybe the changes of newer version of OAI have zero feature for our open-crawler api-spec, and we will not to update the version.
 
-[The detail of specification can be found here.](versions/3.0.2.md)
+[The detail of specification can be found here.](/versions/3.0.2.md)
 
 ## Abstract
 

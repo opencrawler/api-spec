@@ -22,7 +22,7 @@
 
 我们将一直更随着 Open API规范的版本。 目前的Open API最新版本是`3.0.2`，我们的OpenCrawler-API 规范最新版号也将是`3.0.2`. 之后Open API会升级到`3.0.3`，届时OpenCrawler-API 规范也会尽快地升级到最新版。 有时候，如果Open API的版本变动内容不会影响 OpenCrawler-API 规范，那么我们可以选择不更新版本号。
 
-[在这里可以查看详细的OpenCrawler-API 规范的内容。](versions/3.0.2.md)
+[在这里可以查看详细的OpenCrawler-API 规范的内容。](/versions/3.0.2.md)
 
 ## 简介
 
