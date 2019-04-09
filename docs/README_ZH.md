@@ -1,6 +1,6 @@
 <div align="right">
 
-[EN](./README.md) | [中文](.docs/README_ZH.md)
+[EN](/README.md) | [中文](/docs/README_ZH.md)
 
 </div>
 
