@@ -1,22 +1,28 @@
-# The Open Crawler Specification
+<div align="right">
 
-**The specification is under discussing, for new the specification is draft. If you want to use it in your business, you need to understand everything of this specification could be changed. Last updated at 21/10/2018**
+[EN](/README.md) | [中文](/docs/README_ZH.md)
 
-[![Build Status](https://travis-ci.org/opencrawler/api-spec.svg?branch=master)](https://travis-ci.org/opencrawler/api-spec)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fopencrawler%2Fapi-spec.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fopencrawler%2Fapi-spec?ref=badge_shield)
+</div>
 
-![](https://avatars0.githubusercontent.com/u/44334826?s=200&v=4)
+<div align="center">
 
-**Other language version**
-- [中文](README_ZH.md)
+![Open Crawler](https://avatars0.githubusercontent.com/u/44334826?s=200&v=4)
 
-> The open-crawler api-spec is based on [Open API](https://github.com/OAI/OpenAPI-Specification).
+# Open Crawler Specification
+
+Specification to transform normal site or App to an API.
+
+</div>
+
+---
+
+**:warning: The open crawler api specification is based on [Open API](https://github.com/OAI/OpenAPI-Specification).**
 
 We create open-crawler api-spec by modified some section of Open API.
 
 We are always following the stable version of OAI. For now the version of OAI is `3.0.2`, and our open-crawler api-spec also is `3.0.2`. In the feature the stable of OAI will be `3.0.3`, at that time we will update our open-crawl-spec version to follow the newer version as soon as possible. At sometime, maybe the changes of newer version of OAI have zero feature for our open-crawler api-spec, and we will not to update the version.
 
-[The detail of specification can be found here.](versions/3.0.2.md)
+[The detail of specification can be found here.](/versions/3.0.2.md)
 
 ## Abstract
 
@@ -29,8 +35,8 @@ The open-crawler api-spec is trying to make every sites served as API service. T
 ## Community
 
 For now we only supported:
-- [Gitter](https://gitter.im/Open-Crawler/Lobby)
-- Add WeChat, send with `open-crawler` ![Open Crawler Group](https://github.com/jiusanzhou/jiusanzhou.github.io/raw/master/static/WeChat-JohnCx.jpeg)
+
+:fire: We are trying to create a community. 
 
 ## Participation
 
@@ -52,5 +58,3 @@ Not all feedback can be accommodated and there may be solid arguments for or aga
 ## Licensing
 
 See: [License (Apache-2.0)](https://github.com/opencrawl/api-spec/blob/master/LICENSE)
-
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fopencrawler%2Fapi-spec.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fopencrawler%2Fapi-spec?ref=badge_large)
