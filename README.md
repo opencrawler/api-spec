@@ -12,6 +12,8 @@
 
 Specification to transform normal site or App to an API.
 
+**:warning: NOT PRODUCTION-READY.**
+
 </div>
 
 ---
